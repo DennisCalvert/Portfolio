@@ -93,6 +93,15 @@ footer {
   .tile a {
     color: #fff;
     text-decoration: none; }
+    @media screen and (min-width: 600px) {
+      .tile a:hover .tile__overlay {
+        opacity: .7; }
+      .tile a:hover .tile__title-wrapper {
+        background-color: transparent;
+        transform: translate3d(0, -100px, 0) scale(1.4); }
+      .tile a:hover .tile__content {
+        opacity: 1;
+        transform: translate3d(0, -50px, 0); } }
   .tile .tile__overlay {
     position: absolute;
     top: 0;
@@ -135,17 +144,6 @@ footer {
     opacity: 0;
     text-align: center;
     transition: opacity 0.3s ease, transform 0.3s ease; }
-
-.tile a:hover .tile__overlay {
-  opacity: .7; }
-
-.tile a:hover .tile__title-wrapper {
-  background-color: transparent;
-  transform: translate3d(0, -100px, 0) scale(1.4); }
-
-.tile a:hover .tile__content {
-  opacity: 1;
-  transform: translate3d(0, -50px, 0); }
 
 #night {
   background-image: url("http://dwc.blob.core.windows.net/resume/arch.jpg"); }

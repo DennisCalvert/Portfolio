@@ -127,6 +127,24 @@
 		a{
 			color: #fff;
 			text-decoration: none;
+			
+			@media screen and (min-width: $vp-small){
+				&:hover{
+					.tile__overlay{
+						opacity: .7;
+					}
+					
+					.tile__title-wrapper{
+						background-color: transparent;
+						transform: translate3d(0, -100px, 0) scale(1.4);		
+					}
+					
+					.tile__content{
+						opacity: 1;
+						transform: translate3d(0, -50px, 0);
+					}
+				}
+			}
 		}	
 		.tile__overlay{
 			@include cover;
@@ -165,22 +183,6 @@
 			opacity:0;
 			text-align: center;
 			transition: opacity 0.3s ease, transform 0.3s ease;
-		}
-	}
-
-	.tile a:hover{
-		.tile__overlay{
-			opacity: .7;
-		}
-		
-		.tile__title-wrapper{
-			background-color: transparent;
-			transform: translate3d(0, -100px, 0) scale(1.4);		
-		}
-		
-		.tile__content{
-			opacity: 1;
-			transform: translate3d(0, -50px, 0);
 		}
 	}
 
