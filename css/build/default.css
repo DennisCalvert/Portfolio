@@ -168,10 +168,15 @@ article {
   background-color: #fff;
   overflow: hidden; }
   article h3 {
+    clear: both;
     color: #fff;
     margin: 0;
     padding: 10px 25px;
     background-color: #000; }
+  article h4 {
+    border-bottom: 1px solid #000;
+    margin: 30px 0 10px 0;
+    clear: both; }
   article button {
     position: absolute;
     top: 0;
@@ -184,6 +189,8 @@ article {
     text-align: center;
     font-weight: 800;
     z-index: 999; }
+  article li {
+    margin-bottom: 1em; }
   article .article__content {
     max-height: 100%;
     overflow: auto;
@@ -194,6 +201,10 @@ article {
     @media screen and (min-width: 600px) {
       article .article__content {
         padding: 25px; } }
+  article .work-info {
+    font-size: .8em;
+    margin-top: 10px;
+    padding-left: 40px; }
 
 article.is-visible {
   transform: translate3d(0, 0, 0);
@@ -266,7 +277,6 @@ ul.project-list {
 	##Resume
 ---------------------------------------- */
 .resume__icon {
-  float: left;
   max-width: 200px; }
 
 /*----------------------------------------

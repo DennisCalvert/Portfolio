@@ -213,10 +213,17 @@
 		overflow: hidden;
 		
 		h3{
+			clear: both;
 			color: #fff;
 			margin:0;
 			padding:10px 25px;
 			background-color: #000;
+		}
+		
+		h4{
+			border-bottom: 1px solid #000;
+			margin: 30px 0 10px 0;
+			clear:both;
 		}
 		
 		button{
@@ -233,6 +240,10 @@
 			z-index: 999;
 		}
 		
+		li{
+			margin-bottom: 1em;
+		}
+		
 		.article__content{
 			max-height: 100%;
 			overflow: auto;		
@@ -244,6 +255,12 @@
 			@media screen and (min-width: $vp-small){
 				padding:25px;
 			}
+		}
+		
+		.work-info{
+			font-size: .8em;
+			margin-top: 10px;
+			padding-left: 40px;
 		}
 	}
 
@@ -345,7 +362,6 @@ ul.project-list{
 	##Resume
 ---------------------------------------- */
 .resume__icon{
-	float: left;
 	max-width: 200px;
 }
 
